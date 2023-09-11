@@ -3,7 +3,7 @@
 #include <stdio.h>
 /* more headers goes there */
 /**
-*main - hfjg
+*main - hjg
 *Return: kkig
 */
 /* betty style doc for function main goes there */
