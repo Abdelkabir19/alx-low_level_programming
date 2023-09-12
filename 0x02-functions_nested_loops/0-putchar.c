@@ -1,5 +1,4 @@
-#include <main.h>
-#include <stdio.h>
+#include "main.h"
 /**
 *main - ñojviorhi
 *
@@ -12,8 +11,8 @@ int main(void)
 
 	for (i = 0; i < 9; i++)
 	{
-		putchar(put[i]);
+		_putchar(put[i]);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
