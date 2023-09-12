@@ -7,6 +7,7 @@
 int main(void)
 {
 	int i, j, k, l;
+	int m = '1'
 
 	for (i = '0'; i < '9' + 1; i++)
 	{
@@ -14,8 +15,9 @@ int main(void)
 		{
 			for (k = i; k < '9' + 1; k++)
 			{
-				for (l = '0'; l < '9' + 1; l++)
+				for (l = m; l < '9' + 1; l++)
 				{
+					m = '0'
 					putchar(i);
 					putchar(j);
 					putchar(' ');
