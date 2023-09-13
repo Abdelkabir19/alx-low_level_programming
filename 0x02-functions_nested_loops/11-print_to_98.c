@@ -7,7 +7,7 @@
 */
 void print_to_98(int n)
 {
-	int i;
+	int i, r;
 
 	if (n < 99)
 	{
@@ -16,14 +16,14 @@ void print_to_98(int n)
 			if (i < 0)
 			{
 				_putchar('-');
-				i *= -1;
+				r *= -1;
 				if (i > 9)
 				{
-					_putchar(i / 10 + '0');
-					_putchar(i % 10 + '0');
+					_putchar(r / 10 + '0');
+					_putchar(r % 10 + '0');
 				}
 				else
-					_putchar(i % 10 + '0');
+					_putchar(r % 10 + '0');
 			}
 			else
 			{
