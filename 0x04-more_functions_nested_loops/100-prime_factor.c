@@ -7,17 +7,19 @@
 */
 int main(void)
 {
-	int i, j;
+	long int i, j, k;
 
+	k = 612852475143;
 	for (i = 2; i < (612852475143 / 2 + 1); i++)
 	{
-		while (612852475143 % i = 0)
+		if (k % i == 0)
 		{
+			k = k / i;
 			i--;
 			j = i;
 		}
 	}
-	printf("%d", j);
+	printf("%ld", j + 1);
 	putchar('\n');
 	return (0);
 }
