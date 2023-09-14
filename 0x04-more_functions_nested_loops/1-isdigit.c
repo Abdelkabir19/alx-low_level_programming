@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * _isdigit - check the code
  *@c: uygyugy
  * Return: Always 0.
  */
