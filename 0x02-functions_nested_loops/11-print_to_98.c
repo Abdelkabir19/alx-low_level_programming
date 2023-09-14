@@ -1,43 +1,46 @@
 #include "main.h"
 /**
 *print_to_98 - kdjgierj
-*
 *@n: iohjtj
 *Return: jiotrj
 */
 void print_to_98(int n)
 {
-	int i, r;
+	int i, j, k;
 
-	if (n < 99)
+	if (n >= 0 && n <= 15)
 	{
-		for (i = n; i < 99; i++)
+		for (i = 0; i <= n; i++)
 		{
-			if (i > 9)
-				_putchar(i / 10 + '0');_putchar(i % 10 + '0');
-			else if (i >= 0)
-				_putchar(i + '0');
-			else if (i > -10)
-				r = i * -1;_putchar('-');_putchar(r + '0');
-			else if (i > -100)
-				r = i * -1;_putchar('-');_putchar(r / 10 + '0');_putchar(r % 10 + '0');
-			else
-				r = i * -1;_putchar('-');_putchar(r / 100 + '0');_putchar((r / 10) % 10 + '0');_putchar(r % 10 + '0');
-			if (i != 98)
-				_putchar(',');_putchar(' ');
+			for (j = 0; j <= n; j++)
+			{
+				k = j*i;
+				if (j == 0)
+					_putchar(k + '0');
+				else if(k < 10 && j != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar('k + '0');
+				} else if (k >= 10 && k < 100)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar((k / 10) + '0');
+					_putchar((k % 10) + '0');
+				} else if (k >= 100)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar((k / 100) + '0');
+					_putchar(((k / 10) % 10)'0');
+					_putchar((k % 10) + '0');
+				}
+			}
+			_putchar('\n');
 		}
 	}
-	else
-	{
-		for (i = n; i > 97; i--)
-		{
-			if (i < 100)
-				_putchar(i / 10 + '0');_putchar(i % 10 + '0');
-			else
-				_putchar(i / 100 + '0');_putchar((i / 10) % 10 + '0');_putchar(i % 10 + '0');
-			if (i != 98)
-				_putchar(',');_putchar(' ');
-		}
-	}
-	_putchar('\n')
 }
