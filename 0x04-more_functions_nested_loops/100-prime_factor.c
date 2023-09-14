@@ -19,4 +19,5 @@ int main(void)
 	}
 	printf("%d", j);
 	putchar('\n');
+	return (0);
 }
