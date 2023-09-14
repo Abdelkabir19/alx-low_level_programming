@@ -7,13 +7,15 @@
 */
 int main(void)
 {
-	long int i, j, k;
+	long int i, j, k, l;
 
 	k = 612852475143;
-	for (i = 2; i < (612852475143 / 2 + 1); i++)
+	l = 612852475143;
+	for (i = 2; i < (l / 2 + 1); i++)
 	{
 		if (k % i == 0)
 		{
+			l = k;
 			k = k / i;
 			i--;
 			j = i;
