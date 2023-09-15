@@ -6,15 +6,16 @@
 */
 void print_number(int n)
 {
-	int k, s, i, l = 1, r = 0;
+	int k, j, s, i, l = 1, r = 0;
 
+	j = n;
 	if (n < 0)
 	{
 		_putchar('-');
 		n = s = k = n * -1;
 	}
 	s = k = n;
-	if (n == 2147483647 || n == 2147483648) /* D */
+	if (j == 2147483647 || j == -2147483648) /* D */
 	{
 		_putchar('2');
 		_putchar('1');
