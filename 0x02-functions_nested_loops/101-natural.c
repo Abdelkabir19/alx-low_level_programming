@@ -20,4 +20,5 @@ int main(void)
 			k += i * 5;
 	}
 	printf("%d\n", k);
+	return (0);
 }
