@@ -30,19 +30,20 @@ void print_number(int n)
 			_putchar('7');
 		else
 			_putchar('8');
-	}
-	while (k >= 1)
+	} else
+	{
+	while (k >= 10)
 	{
 		k /= 10;
 		r++;
 		l *= 10;
 	}
-	l /= 10;
-	for (i = 1; i < r; i++)
+	for (i = 0; i < r; i++)
 	{
 		n = (s / l) % 10;
 		_putchar(n + '0');
 		l /= 10;
 	}
 	_putchar(s % 10 + '0');
+	}
 }
