@@ -1,42 +1,44 @@
 #include "main.h"
 /**
-*print_number - jhjtru
+* print_number - check the code
 *
-*@n: jhiorji
+*@n: jghhr
 */
 void print_number(int n)
 {
-	int x = n, digit, places = 1000000000;
+	int k, s, i, l = 1, r = 0;
 
-	if (n < 0)/* E */
+	if (n < 0)
 	{
-		x = -n;
-		_putchar('-');
+		_putchar('_');
+		n = s = k = n * -1;
 	}
-	if (n == 2147483647)
+	s = k = n;
+	if (n == 2147483647) /* D */
 	{
-			_putchar('2');
-			_putchar('1');
-			_putchar('4');
-			_putchar('7');
-			_putchar('4');
-			_putchar('8');
-			_putchar('3');
-			_putchar('6');
-			_putchar('4');
-			_putchar('7');
+		_putchar('2');
+		_putchar('1');
+		_putchar('4');
+		_putchar('7');
+		_putchar('4');
+		_putchar('8');
+		_putchar('3');
+		_putchar('6');
+		_putchar('4');
+		_putchar('7');
 	}
-	else if (n == 0)/* A */
-		_putchar('0');
-	else
+	while (k >= 1)
 	{
-		while (places > x)/* B */
-			places /= 10;
-		while (places > 0)
-		{
-			digit = x / places;/* C */
-			_putchar((digit % 10) + '0');
-			places /= 10;
-		}
+		k /= 10;
+		r++;
+		l *= 10;
 	}
+	l /= 10;
+	for (i = 1; i < r; i++)
+	{
+		n = (s / l) % 10;
+		_putchar(n + '0');
+		l /= 10;
+	}
+	_putchar(s % 10 + '0');
 }
