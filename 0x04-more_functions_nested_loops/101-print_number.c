@@ -14,7 +14,7 @@ void print_number(int n)
 		n = s = k = n * -1;
 	}
 	s = k = n;
-	if (n >= 2147483647) /* D */
+	if (n == 2147483647 || n == 2147483648) /* D */
 	{
 		_putchar('2');
 		_putchar('1');
@@ -25,7 +25,10 @@ void print_number(int n)
 		_putchar('3');
 		_putchar('6');
 		_putchar('4');
-		_putchar('7');
+		if (n == 2147483647)
+			_putchar('7');
+		else
+			_putchar('8');
 	}
 	while (k >= 1)
 	{
