@@ -4,7 +4,7 @@
 *
 *@n: jghhr
 */
-void print_number(int n)
+void print_number(unsigned long int n)
 {
 	unsigned long int k, s, i, l = 1, r = 0;
 
