@@ -4,11 +4,10 @@
 *
 * Return: Always 0.
 */
-int main(void)
+void main(void)
 {
 	long int k, i, s = 0, n = 1;
 
-	printf("1, ");
 	for (i = 1; i < 50; i++)
 	{
 		k = s + n;
