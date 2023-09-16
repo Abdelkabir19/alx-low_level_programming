@@ -4,7 +4,7 @@
 *
 * Return: Always 0.
 */
-void main(void)
+int main(void)
 {
 	long int k, i, s = 0, n = 1;
 
@@ -17,4 +17,5 @@ void main(void)
 			printf("%ld, ", k);
 	}
 	printf("%ld\n", k);
+	return (0);
 }
