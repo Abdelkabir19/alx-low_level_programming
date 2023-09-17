@@ -8,12 +8,13 @@ int main(void)
 {
 	long int k, i, a, s = 0, n = 1;
 
-	for (i = 0; i < 50; i++)
+	while (k < 4000000)
 	{
 		k = s + n;
 		s = n;
 		n = k;
-		a += k;
+		if (s % 2 == 0)
+			a += s;
 	}
 	printf("%ld\n", a);
 	return (0);
