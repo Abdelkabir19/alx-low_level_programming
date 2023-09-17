@@ -14,8 +14,8 @@ int main(void)
 		s = n;
 		n = k;
 		if (i != 97)
-			printf("%zu, ", k);
+			printf("%lu, ", k);
 	}
-	printf("%zu\n", k);
+	printf("%lu\n", k);
 	return (0);
 }
