@@ -1,3 +1,4 @@
+#include <inttypes.h>
 #include <stdio.h>
 /**
 * main - check the code.
@@ -6,7 +7,7 @@
 */
 int main(void)
 {
-	unsigned long int k, i, s = 0, n = 1;
+	uintmax_t k, i, s = 0, n = 1;
 
 	for (i = 0; i < 98; i++)
 	{
@@ -14,8 +15,8 @@ int main(void)
 		s = n;
 		n = k;
 		if (i != 97)
-			printf("%lu, ", k);
+			printf("%" PRIuMAX ", ", k);
 	}
-	printf("%lu\n", k);
+	printf("%" PRIuMAX ", ", k);
 	return (0);
 }
