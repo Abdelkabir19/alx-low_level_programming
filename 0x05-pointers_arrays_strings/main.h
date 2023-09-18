@@ -11,8 +11,6 @@ void swap_int(int *a, int *b);
 
 int _strlen(char *s);
 
-size_t strlen(const char *s);
-
 void print_rev(char *s);
 
 
