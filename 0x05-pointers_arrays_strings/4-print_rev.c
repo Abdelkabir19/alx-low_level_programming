@@ -10,9 +10,10 @@ void print_rev(char *s)
 	char e;
 
 	len = _strlen(s);
+
 	for (i = len; i > 0; i--)
 	{
-		e = *s - len;
-		putchar('e');
+		e = *s - i;
+		putchar(e);
 	}
 }
