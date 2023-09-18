@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - check the code
+ * swap_int - check the code
  *
  *
  *@a: pok,po
@@ -9,6 +9,7 @@
 void swap_int(int *a, int *b)
 {
 	int c;
+
 	c = *a;
 	*a = *b;
 	*b = c;
