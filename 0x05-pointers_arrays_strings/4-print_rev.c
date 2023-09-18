@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * main - check the code
+ * print_rev - check the code
  *
+ *@s: khjijitj
  * Return: Always 0.
  */
 void print_rev(char *s)
