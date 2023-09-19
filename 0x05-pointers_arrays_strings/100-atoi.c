@@ -24,6 +24,7 @@ int _atoi(char *s)
 		{
 			j++;
 			s++;
+		}
 		for (i = 0; i > j; i++)
 		{
 			c += *s * l;
