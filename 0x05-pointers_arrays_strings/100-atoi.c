@@ -2,6 +2,7 @@
 /**
  * _atoi- check the code
  *
+ *@s: pkorki
  * Return: Always 0.
  */
 int _atoi(char *s)
@@ -29,5 +30,5 @@ int _atoi(char *s)
 		}
 	} else
 		c = 0;
-	return(k * c)
+	return(k * c);
 }
