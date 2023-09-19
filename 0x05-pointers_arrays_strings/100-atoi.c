@@ -22,14 +22,13 @@ int _atoi(char *s)
 		}
 		while (*s > '0' && *s < '9' && *s != '\0')
 		{
-			s[j] = *s;
 			j++;
-		}
-		s[j] = '\0';
-		for (i = j - 1; i >= 0; i++)
+			s++;
+		for (i = 0; i > j; i++)
 		{
-			c += s[i] * l;
+			c += *s * l;
 			l *= 10;
+			s--;
 		}
 	} else
 		c = 0;
