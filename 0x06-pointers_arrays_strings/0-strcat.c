@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *#include "main.h"
  * _strcat - check the code
  *
  *@dest: kohkotk
