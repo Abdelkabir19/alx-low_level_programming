@@ -7,10 +7,14 @@
  */
 int _atoi(char *s)
 {
-	unsigned int j = 0, i, c = 0, l = 1;
+	unsigned int j = 0, i, c = 0, l = 1, k = 1;
 
 	while ((*s < '0' || *s > '9') && (*s != '\0'))
+	{
 		s++;
+		if (*s == '-')
+			k *= -1;
+	}
 	if (*s != '\0')
 	{
 		while (*s >= '0' && *s <= '9' && *s != '\0')
@@ -24,14 +28,7 @@ int _atoi(char *s)
 			c += (*s - '0') * l;
 			l *= 10;
 		}
-		if (s != 0)
-		{
-			s--;
-			if (*s == '-')
-				c *= -1;
-			s++;
-		}
 	} else
 		c = 0;
-	return(c);
+	return (k * c);
 }
