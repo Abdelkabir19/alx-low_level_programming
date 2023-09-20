@@ -7,7 +7,7 @@
  */
 int _atoi(char *s)
 {
-	int j = 0, i, c = 0, l = 1;
+	unsigned int j = 0, i, c = 0, l = 1;
 
 	while ((*s < '0' || *s > '9') && (*s != '\0'))
 		s++;
