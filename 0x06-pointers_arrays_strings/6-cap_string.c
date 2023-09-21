@@ -6,9 +6,9 @@
  *@a: gioje
  * Return: Always 0.
  */
-char *cap_string(char *)
+char *cap_string(char *a)
 {
-	int n;
+	int n = 0;
 
 	while (*a != '\0')
 	{
