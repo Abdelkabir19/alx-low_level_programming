@@ -2,30 +2,25 @@
 /**
  * cap_string - check the code
  *
- *
  *@a: gioje
  * Return: Always 0.
  */
 char *cap_string(char *a)
 {
-	int n = 0;
+	int k, n = 0;
 
 	if (*a <= 'z' && *a >= 'a')
 		*a += 'A' - 'a';
 	while (*a != '\0')
 	{
-		if (*a == ' ' || *a == '\t' || *a == '\n' || *a == ',' || *a == '.' || *a == ';' || *a == '!')
-		{
-			a++;
-			if (*a <= 'z' && *a >= 'a')
-			{
-				*a += 'A' - 'a';
-				n++;
-			}
-			else
-				a--;
-		}
-		if (*a == '?' || *a == '"' || *a == '(' || *a == ')' || *a == '{' || *a == '}')
+		k = 0;
+		if (*a != ' ' || *a != '\t' || *a != '\n' || *a != ',')
+			k++;
+		else if (*a != '?' || *a != '"' || *a != '(' || *a != ')' || *a != '{')
+			k++;
+		else if (*a != '.' || *a != ';' || *a != '!' || *a != '}')
+			k++;
+		else
 		{
 			a++;
 			if (*a <= 'z' && *a >= 'a')
