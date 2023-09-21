@@ -21,6 +21,8 @@ char *leet(char *a)
 			c++;
 		}
 		a++;
+		c -= 10;
+		s -= 10;
 		n++;
 	}
 	a -= n;
