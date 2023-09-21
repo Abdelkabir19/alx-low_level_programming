@@ -1,14 +1,15 @@
 #include "main.h"
 /**
  * string_toupper - check the code
+ *
  * @a: an array of integers
- * @n: the number of elements to swap
  *
  * Return: nothing.
  */
 char *string_toupper(char *a)
 {
 	int n = 0;
+
 	while (*a != '\0')
 	{
 		if (*a >= 'a' && *a <= 'z')
