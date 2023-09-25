@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-    char *s = "heccl";
+    char *s = "\0";
     char *f;
 
     f = _strchr(s, 'l');
