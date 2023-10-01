@@ -7,21 +7,22 @@
  */
 int _sqrt_recursion(int n)
 {
-	int i = 0;
-
 	if (n < 0)
 		return (-1);
-	else if (n == 0)
-		return (0);
-	else if (n == 1)
-		return (1);
-	if (i * i < n)
-	{
-		i++;
-		i += _sqrt_recursion(n);
-	}
-	i--;
-	if (i * i != n)
+	return (k(n, 0));
+}
+/**
+  * k - ijihu
+  *
+  *@n: ihh
+  *@i: niuiujj
+  *Return: ihiuhiuh
+  */
+int k(int n, int i)
+{
+	if (i * i > n)
 		return (-1);
-	return (i);
+	if (i * i == n)
+		return (i);
+	return (k(n,i + 1));
 }
