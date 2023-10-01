@@ -14,9 +14,9 @@ int _pow_recursion(int x, int y);
 
 int k(int n, int i);
 
+int is_prime_number(int n);
 
-
-
+int b(int n, int i);
 
 
 
