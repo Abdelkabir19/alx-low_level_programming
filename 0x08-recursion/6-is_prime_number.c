@@ -24,8 +24,7 @@ int b(int n, int i)
 	{
 		if (n % i == 0)
 			return (0);
-		else
-			b(n, i + 1);
+		b(n, i + 1);
 	}
 	return (1);
 }
