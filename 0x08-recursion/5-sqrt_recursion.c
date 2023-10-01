@@ -24,5 +24,5 @@ int k(int n, int i)
 		return (-1);
 	if (i * i == n)
 		return (i);
-	return (k(n,i + 1));
+	return (k(n, i + 1));
 }
