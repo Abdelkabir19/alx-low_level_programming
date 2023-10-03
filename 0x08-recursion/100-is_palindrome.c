@@ -23,11 +23,11 @@ int ak(char *s, int i, int n)
 
 	if (*s != '\0' && i == 0)
 		ak(s + 1, i, n + 1);
-	if (n % 2)
+	if (n % 2 == 0)
 		j = n;
 	else
 		j = n + 1;
-	if (s[i] == s[n - 1 - i] && i + 1 < j / 2)
+	if (s[i] == s[n - 1 - i] && i < j / 2)
 		ak(s, i + 1, n);
 	if (i == j / 2)
 		return (1);
