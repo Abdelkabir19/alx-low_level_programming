@@ -27,7 +27,7 @@ int ak(char *s, int i, int n)
 		j = n;
 	else
 		j = n + 1;
-	else if (s[i] == s[n - 1 - i] && i + 1 < j / 2)
+	if (s[i] == s[n - 1 - i] && i + 1 < j / 2)
 		ak(s, i + 1, n);
 	if (i == j / 2)
 		return (1);
