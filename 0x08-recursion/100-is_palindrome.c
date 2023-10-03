@@ -13,7 +13,6 @@ int is_palindrome(char *s)
   *_strlen_recursion - hkljj
   *
   *@s: klhk
-  *@n: klmt
   *Return: mgjt
   */
 int _strlen_recursion(char *s)
@@ -26,6 +25,7 @@ int _strlen_recursion(char *s)
   * ak - jghjgj
   *
   *@s: lkñlk
+  *@i: jbhb
   *@n: klmfklgjre
   *Return: klhjtjh
   */
@@ -33,7 +33,7 @@ int ak(char *s, int i, int n)
 {
 	if (*(s + i) != *(s + n - 1))
 		return (0);
-	if (i >= n )
+	if (i >= n)
 		return (1);
-	return ( ak(s, i + 1, n - 1));
+	return (ak(s, i + 1, n - 1));
 }
