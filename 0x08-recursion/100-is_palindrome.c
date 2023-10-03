@@ -7,7 +7,21 @@
  */
 int is_palindrome(char *s)
 {
-		return (ak(s, 0, _strlen_recursion(s)));
+		return (ak(s, 0, _strlen_recursion(s, 0)));
+}
+/**
+  *_strlen_recursion - hkljj
+  *
+  *@s: klhk
+  *@n: klmt
+  *Return: mgjt
+  */
+int _strlen_recursion(char *s, int n)
+{
+	if (*s != '\0')
+		_strlen_recursion(s + 1, n + 1);
+	else
+		return (n);
 }
 /**
   * ak - jghjgj
