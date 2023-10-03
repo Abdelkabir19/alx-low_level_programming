@@ -7,10 +7,7 @@
  */
 int is_palindrome(char *s)
 {
-	if (*s == '\0')
-		return (1);
-	else
-		return(ak(s, 0, 0));
+		return (ak(s, 0, 0));
 }
 /**
   * ak - jghjgj
