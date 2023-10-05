@@ -14,10 +14,16 @@ char *str_concat(char *s1, char *s2)
 	char *s;
 	int i = 0, r = 0, j = 0;
 
-	while (s1[i] != '\0')
-		i++;
-	while (s2[r] != '\0')
-		r++;
+	if (s1 != NULL)
+	{
+		while (s1[i] != '\0')
+			i++;
+	}
+	if (s2 != NULL)
+	{
+		while (s2[r] != '\0')
+			r++;
+	}
 	s = malloc(sizeof(char) * (r + i + 1));
 	for (j = 0; j < i; j++)
 		s[j] = s1[j];
