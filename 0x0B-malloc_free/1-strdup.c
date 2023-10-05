@@ -5,13 +5,13 @@
 /**
  * _strdup- check the code for ALX School students.
  *
- *str: lmklmr
+ *@str: lmklmr
  * Return: Always 0.
  */
 char *_strdup(char *str)
 {
 	char *s;
-	int i = 0,r = 0;
+	int i = 0, r = 0;
 
 	if (str == NULL)
 		return (NULL);
