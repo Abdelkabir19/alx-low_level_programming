@@ -34,7 +34,7 @@ char **strtow(char *str)
 {
 	int i = 0, j, k = 0, l, m, n;
 	char **o;
-	
+
 	n = wcont(str);
 	if (n == 1)
 		return (NULL);
