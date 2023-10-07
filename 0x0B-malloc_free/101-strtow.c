@@ -11,7 +11,7 @@ int wcont(char *s)
 {
 	int i, n;
 
-	for (i = 0; s != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == ' ')
 		{
@@ -35,14 +35,14 @@ char **strtow(char *str)
 	char **o;
 
 	n = wcont(str);
-	if (n = 0)
+	if (n == 0)
 		return (NULL);
 	o = (char **)malloc(sizeof(char) * n + 1);
-	if ( o == NULL)
+	if (o == NULL)
 		return (NULL);
 	while (str[i] != '\0')
 	{
-		if (str[i] = ' ' && (i = 0  || str[i + 1] != ' '))
+		if (str[i] == ' ' && (i == 0  || str[i + 1] != ' '))
 		{
 			for (j = 1; str[i + j] != ' ' || str[i + j] != ' '; j++)
 				;
