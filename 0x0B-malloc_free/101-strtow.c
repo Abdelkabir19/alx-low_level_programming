@@ -41,7 +41,7 @@ char **strtow(char *str)
 	o = (char **)malloc(sizeof(char *) * n);
 	if (o == NULL)
 		return (NULL);
-	o[n - 1] = NULL;
+	//o[n -1] = NULL;
 	while (str[i])
 	{
 		if (str[i] != ' ' && (i == 0  || str[i - 1] == ' '))
@@ -60,7 +60,7 @@ char **strtow(char *str)
 			}
 			for (l = 0; l < j; l++)
 				o[k][l] = str[i + l];
-			o[k][l] = '\0';
+			//o[k][l] = '\0';
 			k++;
 			i += j;
 		}
