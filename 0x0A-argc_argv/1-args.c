@@ -3,12 +3,13 @@
 /**
   * main- mjihger
   *
-  *
+  *@argc: iojij
+  *@argv: mkjmrt
   *Return: lkmbjr
   */
 int main(int argc, char *argv[])
 {
-	(void)argc;
+	(void)argv;
 
 	printf("%d\n",argc - 1);
 	return (0);
