@@ -4,11 +4,12 @@
 #include <string.h>
 
 /**
+  *_memset - mnbni
   *
-  *
-  *
-  *
-  *
+  *@s: mkhm
+  *@b: ,kmhm
+  *@n: mojmihj6
+  *Return: okmihjj
   */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -33,7 +34,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (size == 0 || nmemb == 0)
 		return (NULL);
 	m = malloc(sizeof(int) * nmemb);
-	if (m = 0)
+	if (m == 0)
 		return (NULL);
 	_memset(m, 0,sizeof(int) * nmemb);
 	return (m);
