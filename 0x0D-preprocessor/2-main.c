@@ -1,7 +1,10 @@
 #include <stdio.h>
-
-int main()
+/**
+  *main - kijjh
+  *Return: mkh
+  */
+int main(void)
 {
-	printf("%s\n",__FILE__);
+	printf("%s\n", __FILE__);
 	return (0);
 }
