@@ -7,7 +7,7 @@
   */
 int op_add(int a, int b)
 {
-	return(a + b);
+	return (a + b);
 }
 /**
   *op_sub - ñllkpohk
@@ -17,7 +17,7 @@ int op_add(int a, int b)
   */
 int op_sub(int a, int b)
 {
-	return(a - b);
+	return (a - b);
 }
 /**
   *op_mul - ñllkpohk
@@ -27,7 +27,7 @@ int op_sub(int a, int b)
   */
 int op_mul(int a, int b)
 {
-	return(a * b);
+	return (a * b);
 }
 /**
   *op_div - ñllkpohk
@@ -37,7 +37,7 @@ int op_mul(int a, int b)
   */
 int op_div(int a, int b)
 {
-	return(a / b);
+	return (a / b);
 }
 /**
   *op_mod - ñllkpohk
@@ -47,5 +47,5 @@ int op_div(int a, int b)
   */
 int op_mod(int a, int b)
 {
-	return(a % b);
+	return (a % b);
 }
