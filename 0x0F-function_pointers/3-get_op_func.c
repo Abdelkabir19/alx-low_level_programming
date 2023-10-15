@@ -2,8 +2,7 @@
 #include "3-calc.h"
 
 /**
- * 3-calc.h - check if a number is equal to 98
- *@get_op_func: the integer to check
+ *get_op_func - the integer to check
  *@s: lknmioy
  * Return: 0 if false, something else otherwise.
  */
