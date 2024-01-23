@@ -26,6 +26,4 @@ int ak(char *s, int i, int n);
 
 int _strlenrecursion(char *s, int n);
 
-
-
 #endif
