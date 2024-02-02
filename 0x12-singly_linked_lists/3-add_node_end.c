@@ -1,11 +1,11 @@
 #include "lists.h"
 /**
-  *add_node - check the code
+  *add_node_end - check the code
   *@head: first nodes
   *@str: new nodes
   * Return: Always 0.
   */
-list_t *add_node(list_t **head, const char *str    )
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *string, *leng;
 	int len;
@@ -20,7 +20,7 @@ list_t *add_node(list_t **head, const char *str    )
 	string->next = NULL;
 	leng = *head;
 	if (leng == NULL)
-		*head = leng;
+		*head = string;
 	else
 	{
 		while (leng->next)
@@ -28,6 +28,4 @@ list_t *add_node(list_t **head, const char *str    )
 		leng->next = string;
 	}
 	return (*head);
-}
-
 }
