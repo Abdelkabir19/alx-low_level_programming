@@ -4,7 +4,7 @@
   *
   *@b: jtyjt
   *
-  *Return : ljkjiof
+  *Return: ljkjiof
   */
 unsigned int binary_to_uint(const char *b)
 {
